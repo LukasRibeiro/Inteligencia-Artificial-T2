@@ -2,9 +2,9 @@
 
 ### Desenvolvedores: 
 
-> ![Gabriel Koyama Alves](https://github.com/gabrielkoyamao)
+> [Gabriel Koyama Alves](https://github.com/gabrielkoyamao)
 
-> ![Lucas Monteiro Ribeiro](https://github.com/lukasribeiro) 
+> [Lucas Monteiro Ribeiro](https://github.com/lukasribeiro) 
     
 # Introdução
 
