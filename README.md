@@ -104,14 +104,14 @@ implementação do k-means.
 
   Redes neurais artificiais, são freqüentemente usados para resolver uma grande variedade de problemas do mundo real. Entre o grupo de redes treinadas e supervisionadas, este paradigma pode ser considerado enquanto arquitetura, a padrão. É por isso que numerosas extensões e modificações foram sugeridas para melhorar os resultados ou alcançar algumas propriedades necessárias de redes treinadas.
   
-#### Descrição do porblema
+### Descrição do porblema
   
   O problema no qual iremos tratar é a diferenciação dos tipos de plantas íris, dado inputs como comprimento e largura das suas pétalas e sépalas será possível classificar essas imagens através da rede neural MLP usando o algoritmo Backpropagation.
 
-#### Porque Utilizar rede neural
+### Porque Utilizar rede neural
   Foi utilizado o MLP por se tratar de um paradigma muito utilizado, tendo inclusive a sua arquitetura considerada como a padrão.
   
-#### Variáveis
+### Variáveis
 
 As variáveis de entrada do dataset em questão são:
 - ○ Comprimento da sépala em cm
@@ -119,17 +119,63 @@ As variáveis de entrada do dataset em questão são:
 - ○ Comprimento da pétala em cm
 - ○ Largura da pétala em cm
 
-#### Camada de entrada
+### Camada de entrada
   A camada de entrada da rede neural, assim como a camada de saída, é definida de acordo com o número de hidden_input_layer, definindo o número de camdas com o numero de hidden_input_inuts.
   
-#### Numero de neuronios
+### Numero de neuronios
   Nesse caso, Estamos utilizando uma rede com 3 camadas, com 13 neurônios cada, tendo um total de 39 neurônios.
   
-#### Arquitetura
+### Arquitetura
   A arquitetura da rede está definida como: X:13:13:13:X
 
-#### Função de ativação
+### Função de ativação
   A função de ativação padrão e a mais usada na rede neural é o relu, (Rectifier), que é definida por padrão no sklearn e pela função:
 
+  ![alt text](./imagens/funcao.PNG)
+  
+Onde x é o input para o neurônio. Ela foi introduzida pela primeira vez em uma rede dinâmica por Hahnloser em 2000. Foi demonstrado pela primeira vez em 2011 para permitir um melhor treinamento de redes mais profundas, em comparação com as funções de ativação amplamente utilizadas antes de 2011, por exemplo, o sigmóide logístico (que é inspirado por probabilidade teoria) e sua contraparte mais prática , a tangente hiperbólica . O retificador é, a partir de 2017 , a função de ativação mais popular para redes neurais profundas
 
-          
+**A implementação da rede neural, voce pode conferir no codigo disponivel neste repositorio. Cada parte foi comentada para melhor entendimento do funcionamento do algoritimo.**
+
+### Sobre conceitos
+
+   A rede na qual treinamos, tem aproximadamente 120 dados de entrada e 38 para teste, e ao longo dos testes propostos foi verificado todas as funções de ativações possíveis disponíveis pelo scikit learn, e pudemos constatar que a função de ativação ‘identity’ funcionou bem melhor nesse dataset, em relação a performance, pois a maioria mantiveram a sua acurácia em torno de 97%.
+   
+### Referências
+
+https://www.devmedia.com.br/data-mining-na-pratica-algoritmo-k-means/4584
+
+https://www.datasciencecentral.com/profiles/blogs/python-implementing-a-k-means-algorithm-with-sklearn
+
+https://jakevdp.github.io/PythonDataScienceHandbook/05.11-k-means.html
+
+https://medium.com/@iSunilSV/data-science-python-k-means-clustering-eed68b490e02
+
+https://www.youtube.com/watch?v=ikt0sny_ImY&list=PLZ7s-Z1aAtmIbaEj_PtUqkqdmI1k7libK&index=23
+
+https://scikit-learn.org/stable/modules/clustering.html#k-means
+
+http://madhugnadig.com/articles/machine-learning/2017/03/04/implementing-k-means-clustering-from-scratch-in-python.html
+
+https://www.michael-grogan.com/k-means-clustering-python-sklearn/
+
+https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_digits.html#sphx-glr-auto-examples-cluster-plot-kmeans-digits-py
+
+https://pt.wikipedia.org/wiki/Perceptron_multicamadas
+
+http://archive.ics.uci.edu/ml/index.php
+
+https://medium.com/ensina-ai/rede-neural-perceptron-multicamadas-f9de8471f1a9
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.6859&rep=rep1
+&type=pdf
+	
+https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+
+https://www.w3cschool.cn/doc_scikit_learn/scikit_learn-modules-generated-sklearn-neural_network-mlpclassifier.html
+
+https://www.kdnuggets.com/2016/10/beginners-guide-neural-networks-python-scikit-learn.html/2
+
+https://www.kaggle.com/ahmethamzaemra/mlpclassifier-example
+https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html
+
