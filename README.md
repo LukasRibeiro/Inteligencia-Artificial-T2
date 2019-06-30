@@ -2,8 +2,9 @@
 
 ### Desenvolvedores: 
 
-    Gabriel Koyama: 
-    Lucas Monteiro: 
+> ![Gabriel Koyama Alves](https://github.com/gabrielkoyamao)
+
+> ![Lucas Monteiro Ribeiro](https://github.com/lukasribeiro) 
     
 # Introdução
 
